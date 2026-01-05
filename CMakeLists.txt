@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.30)
-project(LeetCode C)
+project(leetcode C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(LeetCode main.c
-)
+add_executable(leetcode main.c
+        include/doublePointer.h
+        src/doublePointer.c
+        include/slidingWindow.h
+        src/slidingWindow.c)

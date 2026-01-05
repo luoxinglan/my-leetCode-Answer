@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "include/doublePointer.h"
+#include "include/slidingWindow.h"
 
 void print2(int **nums, int numsSize, int *colsize) {
     for (int i = 0; i < numsSize; i++) {
@@ -25,8 +26,18 @@ void doublePointer() {
     print2(res2, returnSize2, retunrCulomSizes2);
 }
 
+void slidingwindow() {
+    int nums1[] = {2, 3, 1, 2, 4, 3};
+    int numsSize1 = 6;
+    int res1 = minSubArrayLen209(7, nums1, numsSize1);
+    int nums2[] = {10, 5, 2, 6};
+    int numsSize2 = 4;
+    int res2 = numSubarrayProductLessThanK713(nums2, numsSize2, 100);
+    char s[] = "abcabcbb";
+    int res3 = lengthOfLongestSubstring3(s);
+}
 
 int main(void) {
-    doublePointer();
+    slidingwindow();
     return 0;
 }
