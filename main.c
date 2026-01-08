@@ -3,6 +3,7 @@
 
 #include "include/doublePointer.h"
 #include "include/slidingWindow.h"
+#include "include/binarySearch.h"
 
 void print2(int **nums, int numsSize, int *colsize) {
     for (int i = 0; i < numsSize; i++) {
@@ -37,7 +38,28 @@ void slidingwindow() {
     int res3 = lengthOfLongestSubstring3(s);
 }
 
+
+void binarysearch() {
+    // int numbers1[] = {5, 7, 7, 8, 8, 10};
+    int numbers1[] = {1, 2, 3, 9, 10, 11};
+    int numberSize1 = 6;
+    int returnSize1 = 0;
+    int *res1 = searchRange34(numbers1, numberSize1, 8, &returnSize1);
+    // int numbers2[] = {1, 2, 1, 3, 5, 6, 4};
+    // int numbers2[] = {9, 7, 3, 7, 8};
+    int numbers2[] = {1, 2, 1};
+    int numberSize2 = 3;
+    int res2 = findPeakElement162(numbers2, numberSize2);
+    int numbers3[] = {3, 4, 5, 1, 2};
+    int numberSize3 = 5;
+    int res3 = findMin153(numbers3, numberSize3);
+    // int numbers4[] = {4, 5, 6, 7, 0, 1, 2};
+    int numbers4[] = {3, 1};
+    int numberSize4 = 2;
+    int res4 = search33(numbers4, numberSize4, 3);
+}
+
 int main(void) {
-    slidingwindow();
+    binarysearch();
     return 0;
 }

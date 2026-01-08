@@ -7,4 +7,6 @@ add_executable(leetcode main.c
         include/doublePointer.h
         src/doublePointer.c
         include/slidingWindow.h
-        src/slidingWindow.c)
+        src/slidingWindow.c
+        include/binarySearch.h
+        src/binarySearch.c)
