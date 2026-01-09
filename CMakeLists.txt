@@ -9,4 +9,6 @@ add_executable(leetcode main.c
         include/slidingWindow.h
         src/slidingWindow.c
         include/binarySearch.h
-        src/binarySearch.c)
+        src/binarySearch.c
+        include/myLinkList.h
+        src/myLinkList.c)

@@ -4,6 +4,7 @@
 #include "include/doublePointer.h"
 #include "include/slidingWindow.h"
 #include "include/binarySearch.h"
+#include "include/myLinkList.h"
 
 void print2(int **nums, int numsSize, int *colsize) {
     for (int i = 0; i < numsSize; i++) {
@@ -59,7 +60,13 @@ void binarysearch() {
     int res4 = search33(numbers4, numberSize4, 3);
 }
 
+void linkedList() {
+    int numbers1[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    LinkList l = initLinkListNoHead(8, numbers1);
+    LinkList l1 = reverseKGroup25(l, 3);
+}
+
 int main(void) {
-    binarysearch();
+    linkedList();
     return 0;
 }
